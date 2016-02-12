@@ -14,7 +14,7 @@
 $(function () { 
   $("[data-toggle='tooltip']").tooltip();
   $('.tab-content').hide();
-  $('#myModal').modal({
+  $('#modal').modal({
 		keyboard: false
   })
 });
@@ -46,7 +46,7 @@ $(function () {
 			</button>
 			<ul class="dropdown-menu">
 			<li id="download_curr_elem"></li>
-			<li><a href="download_settings.php">Параметры загрузки</a></li>			
+			<li><a href="download_module.php">Параметры загрузки</a></li>	
 			</ul>
 		</div>
 		</li>
@@ -55,8 +55,8 @@ $(function () {
 </div>
 </div>
 <div id="wrapper2">
-
-<div id="nav_col" style="width: 230px;">
+<div id="nav_col" style="width: 200px;">
+	<p class="center">Каталог</p>
 	<!--Vidgets' list -->
 	<div class="btn-group-vertical" role="group" aria-label="..." style="width:100%;">
     <div class="btn-group" role="group">

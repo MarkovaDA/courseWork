@@ -33,16 +33,15 @@ width:1200px;
 height: 1000px;
 margin: 0 auto;
 clear: both;
-background: #750796;
+background: white
 }
 #nav_col{
-width: 185px;
 height: 600px;
 padding: 5px;
 margin-right: 5px;
 float: left;
-border: 1px solid #750796;
-background-color: #750796;
+border: 1px solid white;
+background-color: white;
 color: white;
 }
 #view_col, #settings_col{
@@ -71,6 +70,7 @@ background:#750796;
 .center{
 text-align: center;
 text-decoration: underline;
+color:#750796;
 }
 #main_btns{
 margin: 0 auto;
