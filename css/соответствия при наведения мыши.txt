@@ -1,0 +1,5 @@
+//ассоциативный массив, где каждому элементу в обычном состоянии ставится его код сss в состоянии hover
+	var array = {'#navigation_menu': '#navigation_menu:hover', 
+	'#navigation_menu ul': '#navigation_menu ul:hover', 
+	'#navigation_menu .hsubs, #navigation_menu .nosubs': '#navigation_menu li:hover > a', 
+	'#navigation_menu .subs li a': '#navigation_menu ul li:hover>a'};
