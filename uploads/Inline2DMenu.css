@@ -1,0 +1,30 @@
+.menu_point{
+width: auto;
+height: 10px;
+float: left;
+cursor: pointer;
+position: relative;
+padding: 5px;
+text-align: center;
+margin-right: 10px;
+font-family: Helvetica;
+color: #750796;
+font-weight:bold;
+z-index: 2;
+font-size: 14px;
+}
+
+.inline2DMenu {
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color:#005da8;
+padding: 5px;
+border: 1px solid #750796;
+-moz-box-shadow: 0 0 7px #750796;
+-webkit-box-shadow:0 0 7px #750796;
+box-shadow: 0 0 7px #750796;
+height: 30px;
+position: absolute;
+z-index: 0;
+}

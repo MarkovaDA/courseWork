@@ -1,0 +1,114 @@
+body .VerticalHierarchicalMenu  li
+{   font:12px/1.2em Arial, Helvetica, sans-serif; 
+	color:#999; 
+	padding:0; 
+	margin:0; 
+	width: 120px;
+}
+.VerticalHierarchicalMenu {
+	margin: 0; 
+	padding: 0; 
+	position: relative; 
+	word-spacing: -0.25em; 
+}
+.VerticalHierarchicalMenu li {
+	display:block; 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	text-align: left; 
+	vertical-align: top; 
+	word-spacing: normal; 
+	zoom: 1;
+}
+.VerticalHierarchicalMenu> li:last-child {
+	border:0;
+}
+.VerticalHierarchicalMenu a {
+	color: #750796; 
+	display: block; 
+	font: 12px/1.2em Arial, Helvetica, sans-serif; 
+	padding: 10px 20px 10px 10px; 
+	text-align: left; 
+	text-decoration: none; 
+	position:relative; 
+}
+.VerticalHierarchicalMenu a:hover { 
+background: #750796; 
+color: white; 
+text-decoration: none; 
+}
+.VerticalHierarchicalMenu ul li {
+display: block; 
+list-style: none; 
+margin: 0; 
+padding: 0;  
+border:0;
+}
+.VerticalHierarchicalMenu ul a { 
+display: block;
+ }
+.VerticalHierarchicalMenu ul { 
+background: #fff; 
+border: 1px solid #750796; 
+box-shadow: 0 5px 10px rgba(0,0,0,0.2); 
+top: 0; 
+display: none; 
+ left: 0;
+ margin: 0;
+ margin: 1px 0 0 0;
+ padding: 0; 
+ position: absolute; 
+ top: 0; 
+ z-index:2
+ }
+VerticalHierarchicalMenu .arrow-left { 
+border-bottom: 5px solid transparent; 
+border-right: 5px solid red; 
+border-top: 5px solid transparent; 
+height: 0; 
+left: -4px; 
+position: absolute; 
+top: 0; 
+width: 0; 
+z-index: 1;}
+.VerticalHierarchicalMenu .arrow-left2 { 
+border-bottom: 5px solid transparent; 
+border-right: 5px solid #750796; 
+border-top: 5px solid transparent; 
+height: 0; 
+left: -5px; 
+position: absolute; 
+top: 0; 
+width: 0; 
+z-index: 0; }
+
+.VerticalHierarchicalMenu .arrow-right {
+ width: 0; 
+ height: 0;
+ border-top: 4px solid transparent;
+ border-bottom: 4px solid transparent; 
+ border-left: 4px solid white; 
+ position:absolute; 
+ top:13px; 
+ right:8px;
+ }
+
+.VerticalHierarchicalMenu .active { 
+    background:#eee; 
+    color:#000;
+}
+
+.VerticalHierarchicalMenu .arrow-left {
+    border-right-color: white;
+    left:-4px; 
+}
+.VerticalHierarchicalMenu .arrow-right {
+    top:13px; 
+    right:8px;
+    border-left-color:#750796;
+}
+
+
+
+

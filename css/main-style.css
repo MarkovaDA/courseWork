@@ -30,7 +30,8 @@ margin: 0 auto;
 }
 #wrapper2{
 width:1200px;
-height: 1000px;
+min-height: 1000px;
+height: auto;
 margin: 0 auto;
 clear: both;
 background: white
@@ -67,10 +68,12 @@ height: 100%;
 position:absolute;
 background:#750796;
 }
-.center{
+.center, .center-selection{
 text-align: center;
-text-decoration: underline;
 color:#750796;
+}
+.center-selection{
+text-decoration:underline;
 }
 #main_btns{
 margin: 0 auto;
@@ -98,11 +101,13 @@ text-decoration: underline;
 }
 #menu{
 width: 1200px;
-height: 48px;
+height: 50px;
 background: silver;
 }
 #menu .row{
 margin-left: 220px;
+width: 550px;
+float:right;
 }
 #menu .row li a{
 background: silver;
@@ -160,19 +165,13 @@ width: 430px;
 #SimpleDroppingMenuPoint, #SimpleDroppingMenuPointHref{
 width: 210px;
 }
-table td{
-padding: 5px;
-}
-.selection{
-color: #750796;
-}
 #btnDownload{
 background: silver;
 color:  #750796;
 border: none;
 font-size: 18px;
 }
-.dropdown-menu a:hover {
+.dropdown-menu a:hover ,#btnDownload:hover{
  background: #750796 !important;
  color:white !important;
 }
@@ -180,8 +179,46 @@ font-size: 18px;
 height: 40px;
 font-size: 18px;
 }
-
-
+.block{
+border-radius: 5px;
+height: 380px;
+width: 380px;
+float: left;
+margin: 10px;
+box-shadow: 0px 2px 2px grey;
+}
+.category{
+padding: 5px;
+width: 360px;
+height: 340px;
+overflow-y: scroll;
+margin: 0 auto;
+}
+#tab1, #tab2, #tab3{
+ border-radius: 5px;
+ padding: 5px;
+ height: 900px;
+ width: 500px;
+ overflow-y: scroll;
+ float:right;
+}
+#user_login{
+line-height: 50px;
+margin-left: 10px;
+padding: 5px;
+color:  #750796;
+font-size: 20px;
+text-transform: capitalize;
+}
+#user_login:hover{
+text-decoration: none;
+}
+label{
+font-weight:normal;
+}
+.dropdown-menu li{
+width: auto;
+}
 
 
 
