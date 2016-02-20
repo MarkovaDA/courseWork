@@ -112,12 +112,23 @@ float:right;
 #menu .row li a{
 background: silver;
 color:  #750796;
-padding: 10px;
+padding-top: 5px;
+}
+
+#menu .menu_item{
+margin-top: 5px !important;
+height: 40px;
 }
 #menu .menu_item:hover{
 background: #750796;
 color: white;
-padding: 10px;
+}
+#btnDownload{
+background: silver;
+color:  #750796;
+border: none;
+height: 30px;
+font-size:18px;
 }
 #nav_col .btn-link{
 margin-left: 0px;
@@ -165,13 +176,7 @@ width: 430px;
 #SimpleDroppingMenuPoint, #SimpleDroppingMenuPointHref{
 width: 210px;
 }
-#btnDownload{
-background: silver;
-color:  #750796;
-border: none;
-font-size: 18px;
-}
-.dropdown-menu a:hover ,#btnDownload:hover{
+.dropdown-menu a:hover {
  background: #750796 !important;
  color:white !important;
 }
