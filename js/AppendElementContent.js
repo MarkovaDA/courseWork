@@ -1,5 +1,5 @@
-
-var fileNames = ["Simple2DDroppingMenu", "Inline2DMenu", "VerticalHierarchicalMenu"];
+/*при загрузке старнички подгружать из базы данных ?*/
+var fileNames = ["Simple2DDroppingMenu", "Inline2DMenu", "VerticalHierarchicalMenu", "Compact2DMenu", "InlineButton3DMenu", "InlineSliding2DMenu"];
 
 /*подгрузка CSS*/
 function plugCSS(way){
@@ -16,7 +16,6 @@ function scanHTML(text){
 }
 
 $(document).ready(function(){
-	
 	$('.vidget').click(function(){
 		if ($('#user_login').text().length > 0){
 			//опции настройки для зарегистрированных пользователей
@@ -33,7 +32,7 @@ $(document).ready(function(){
 				 type: 'POST',
 				 data: 'elem_id=' + elem_id,
 				 url: 'php_scripts/append_code_element.php?action=getCode',
-				 success: function(data){
+				 success: function(data){					
 					$('#view_col').empty();
 					$('#view_col').append('<p class="center-selection">Демонстрация виджета</p>');
 					$('#view_col').append(data);
@@ -41,7 +40,7 @@ $(document).ready(function(){
 					window[fileNames[elem_id]]();
 				}			 
 			});
-			//запрос на внедрение кода демонстрации			
+			//запрос на внедрение кода демонстрации				
 			$.ajax({
 				 type: 'POST',
 				 dataType: 'json',
@@ -71,5 +70,13 @@ $(document).ready(function(){
 		delayHide: 300
 	});
  }
-
+ function Compact2DMenu(){
+	 $('#navmenu').setCompact2DMenu();
+ }
+ function InlineButton3DMenu(){
+	 $('#navigation_menu').setInlineButton3DMenu();
+ }
+ function InlineSliding2DMenu(){
+	$('#navigation_menu').setInlineSliding2DMenu(); 
+ }
  

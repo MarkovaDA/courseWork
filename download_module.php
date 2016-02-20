@@ -33,27 +33,43 @@
 </div>
 </div>
 <div id="wrapper2" style="background: white;">
-	<form name="zips" method="post" action="generate_zip.php">
+	<form name="zips" method="post" action="generate_zip2.php">
 	<p class="center-selection">Параметры загрузки</p>
 	<div class="block">
 		<p class="center">2D menu</p>
-		<div class="category">
-		<label>
-		<input type="checkbox" name="files[]" value="Simple2DDroppingMenu">SimpleDroppingMenu
-		</label><br>
-		<label>
-		<input type="checkbox" name="files[]" value="Inline2DMenu">InlineMenu
-		</label><br>
-		<label>
-		<input type="checkbox" name="files[]" value= "VerticalHierarchicalMenu">VerticalHierarchicalMenu
-		</label>
-		<br>
+		<div class="category" >
+			
+			<label class="settings_checkbox_label">
+			<input type="checkbox" name="files[]" value="Simple2DDroppingMenu"><span></span>
+			<div class="text_mark">SimpleDroppingMenu</div>
+			</label>
+			
+			<label class="settings_checkbox_label">
+			<input type="checkbox" name="files[]" value="Inline2DMenu"><span></span>
+			<div class="text_mark">InlineMenu</div>
+			</label>
+			
+			<label class="settings_checkbox_label">
+			<input type="checkbox" name="files[]" value= "VerticalHierarchicalMenu"><span></span>
+			<div class="text_mark">VerticalHierarchicalMenu </div>
+			</label>
+			
+			<label class="settings_checkbox_label">
+			<input type="checkbox" name="files[]" value= "InlineSliding2DMenu"><span></span>
+			<div class="text_mark">InlineSlidingMenu</div>
+			</label>
+
 		</div>
 	</div>
 	
 	<div class="block">
 		<p class="center">3D menu</p>
-		<div class="category"></div>
+		<div class="category">
+			<label class="settings_checkbox_label">
+			<input type="checkbox" name="files[]" value= "InlineButton3DMenu"><span></span>
+			<div class="text_mark">InlineButton3DMenu</div>
+			</label>
+		</div>
 	</div>
 	
 	<div class="block">

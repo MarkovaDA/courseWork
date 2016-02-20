@@ -66,13 +66,21 @@
 	   2D menu 
 	  <span class="caret"></span>
 	</button>
-	<ul class="dropdown-menu">
-	  <li><a class="vidget" id="0">SimpleDroppingMenu</a></li>
-	  <li><a class="vidget" id="1">InlineMenu</a></li>
-	  <li><a class="vidget" id="2">VerticalHierarchicalMenu</a></li>
-	</ul>
+		<ul class="dropdown-menu">
+		  <li><a class="vidget" id="0">SimpleDroppingMenu</a></li>
+		  <li><a class="vidget" id="1">InlineRollingMenu</a></li>
+		  <li><a class="vidget" id="2">VerticalHierarchicalMenu</a></li>
+		  <li><a class="vidget" id="5">InlineSlidingMenu</a></li>
+		  <!--<li><a class="vidget" id="3">Compact2DMenu</a></li>-->
+		</ul>
 	</div>
-	<button type="button" class="btn btn-default" style="text-align:left; font-size: 18px;">3D menu <span class="caret"></span></button>
+	
+	<div class="btn-group" role="group">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align:left; font-size: 18px;">3D menu <span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a class="vidget" id="4">InlineButtonMenu</a></li>
+		</ul>
+	</div>
 	<button type="button" class="btn btn-default" style="text-align:left; font-size: 18px;">Panels <span class="caret"></span></button>
 	</div>
 </div>
@@ -81,9 +89,9 @@
 
  <p class="center-selection">Внедрение виджета</p>
  <ul class="nav nav-tabs" style="float:center;">
-      <li><a data-toggle="tab" class="active" href="#tab1">HTML</a></li>
-      <li><a data-toggle="tab" href="#tab2">JS</a></li>
-      <li><a data-toggle="tab" href="#tab3">CSS</a></li>
+      <li><a data-toggle="tab" class="active" href="#tab1">html</a></li>
+      <li><a data-toggle="tab" href="#tab2">js</a></li>
+      <li><a data-toggle="tab" href="#tab3">css</a></li>
  </ul>
  <div class="tab-content" style="float:right;">
 	<div id="tab1" class="tab-pane fade in active">
@@ -94,14 +102,18 @@
 	</div>
  </div>
 </div>
-<div id="view_col">
+<div id ="view_col">
 <p class="center-selection">Демонстрация виджета</p>
 </div>
 
 </div>
 <div id="footer">
 </div>
+<!--эти скрипты подгружать динамически-->
 <script src = "uploads/Inline2DMenu.js"></script>
 <script src = "uploads/VerticalHierarchicalMenu.js"></script>
+<script src = "uploads/Compact2DMenu.js"></script>
+<script src = "uploads/InlineButton3DMenu.js"></script>
+<script src = "uploads/InlineSliding2DMenu.js"></script>
 </body>
 </html>

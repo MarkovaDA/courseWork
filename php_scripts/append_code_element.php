@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once 'login.php';
 $connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
 $connection->set_charset("utf8");
@@ -12,6 +12,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'getCode'){
 	$result->data_seek(0);
 	echo  $result->fetch_assoc()['html_code'];	
 }
+$connection->close();
+
 if (isset($_GET['action']) && $_GET['action'] == 'getDemo'){
 	$codes = array();
 	$elem_id = $_POST['elem_id'];
@@ -21,5 +23,5 @@ if (isset($_GET['action']) && $_GET['action'] == 'getDemo'){
 	array_push($codes, array('html' => $html, 'js' => $js, 'css' => $css));
 	echo json_encode(array("codes" => $codes));
 }
-$connection->close();
+
 ?>

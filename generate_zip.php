@@ -2,6 +2,7 @@
 $error = "";
 if (isset($_POST['download'])){
 	$file_folder = "uploads/";
+	//объединённый код элементов
 	if (isset($_POST['files']) and count($_POST['files']) > 0){
 		$zip = new ZipArchive();
 		$zip_name = time() . ".zip";
@@ -9,7 +10,8 @@ if (isset($_POST['download'])){
 			$error .= "* Sorry ZIP creation failed at this time";
 		}
 		foreach($_POST['files'] as $file){
-			
+			//переходим в папку $file_folder . file
+			//добавляем файлы из папки images все в архив, таким образом, в нашем архиве должна быть папка images
 			if (file_exists($file_folder . $file . '.css')){
 				$css = file_get_contents($file_folder . $file . '.css');
 				file_put_contents($file_folder . 'dynamicUI.css', $css, FILE_APPEND | LOCK_EX);
