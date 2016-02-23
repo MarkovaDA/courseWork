@@ -8,7 +8,7 @@
     width:530px;
     height:52px;
 	float:right;
-	margin-right: 100px;
+	margin-right: 70px;
     position:relative;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 16px;
@@ -18,18 +18,17 @@
 }
 .InlineSliding2DMenu .item{
     position:relative;
-    background-color:#f0f0f0;
+    background-color:white;
     float:right;
     width:52px;
     margin:0px 5px;
     height:52px;
-    border:2px solid #ddd;
     -moz-border-radius:30px;
     -webkit-border-radius:30px;
     border-radius:30px;
     -moz-box-shadow:1px 1px 3px #555;
     -webkit-box-shadow:1px 1px 3px #555;
-    box-shadow:1px 1px 3px #555;
+    box-shadow:1px 1px 3px #555; 
     cursor:pointer;
     overflow:hidden;
 }
@@ -59,7 +58,7 @@
 .InlineSliding2DMenu .item_content{
     position:absolute;
     height:52px;
-    width:220px;
+    width:160px;
     overflow:hidden;
     left:56px;
     top:7px;
@@ -92,7 +91,10 @@
 .InlineSliding2DMenu .item_content p input{
     border:1px solid #ccc;
     padding:1px;
-    width:155px;
+    width:100px;
     float:left;
     margin-right:5px;
+}
+.InlineSliding2DMenu .item_content p input:hover{
+box-shadow: none !important;
 }

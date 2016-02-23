@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link   rel = "stylesheet"  href = "css/bootstrap.min.css">
 <link   rel = "stylesheet"  href = "css/main-style.css">
 <script src = "js/jquery-1.11.3.min.js"></script>
 <script src = "js/bootstrap.min.js"></script>
 <script src = "js/Unlogin-script.js"></script>
 <script src = "js/AppendElementContent.js"></script>
-
 
 <link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shCoreEclipse.css" />
 <link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shThemeEclipse.css" />
@@ -47,8 +47,8 @@
 			<span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu">
-			<li id="download_curr_elem"></li>
-			<li><a href="download_module.php">Параметры загрузки</a></li>	
+				<li id="download_curr_elem" ></li>
+				<li ><a href="download_module.php">Параметры загрузки</a></li>	
 			</ul>
 		</div>
 		</li>
@@ -86,12 +86,12 @@
 </div>
 
 <div id = "settings_col">
-
+		
  <p class="center-selection">Внедрение виджета</p>
  <ul class="nav nav-tabs" style="float:center;">
-      <li><a data-toggle="tab" class="active" href="#tab1">html</a></li>
-      <li><a data-toggle="tab" href="#tab2">js</a></li>
-      <li><a data-toggle="tab" href="#tab3">css</a></li>
+      <li><a  data-toggle="tab" class="active" href="#tab1">html</a></li>
+      <li><a  data-toggle="tab" href="#tab2">js</a></li>
+      <li><a  data-toggle="tab" href="#tab3">css</a></li>
  </ul>
  <div class="tab-content" style="float:right;">
 	<div id="tab1" class="tab-pane fade in active">

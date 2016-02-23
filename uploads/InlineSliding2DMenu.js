@@ -25,7 +25,7 @@
                     angle += 40;
                     $('.link',$elem).stop().animate({rotate: '+=-40deg'}, 0);
                 },10);
-                $elem.stop().animate({width:'268px'}, 500)
+                $elem.stop().animate({width:'200px'}, 500)
                 .find('.item_content').fadeIn(400,function(){
                     $(this).find('p').stop(true,true).fadeIn(600);
                 });
