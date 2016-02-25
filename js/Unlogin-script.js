@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-
 	$('#unlogin').click(function(){
 		 $.ajax({
 			 type: 'POST',
@@ -8,6 +7,8 @@ $(document).ready(function(){
 			 success: function(data){
 				$('input[type=hidden]').val("");
 				$('#user_login').text("");
+				$('#for_btn').remove();
+				$('#menu .row ul').children().eq(2).remove();
 			 }			 
 		});
 	});

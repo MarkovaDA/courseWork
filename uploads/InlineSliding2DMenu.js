@@ -22,10 +22,10 @@
                         clearInterval(t);
                         return;
                     }
-                    angle += 40;
-                    $('.link',$elem).stop().animate({rotate: '+=-40deg'}, 0);
+                    angle -= 40;
+                    $('.link',$elem).stop().animate({rotate: '+=40deg'}, 0);
                 },10);
-                $elem.stop().animate({width:'200px'}, 500)
+                $elem.stop().animate({width:'200px', left: '=50px'}, 500)
                 .find('.item_content').fadeIn(400,function(){
                     $(this).find('p').stop(true,true).fadeIn(600);
                 });
@@ -37,10 +37,10 @@
                         clearInterval(t);
                         return;
                     }
-                    angle -= 40;
-                    $('.link',$elem).stop().animate({rotate: '+=40deg'}, 0);
+                    angle += 40;
+                    $('.link',$elem).stop().animate({rotate: '+=-40deg'}, 0);
                 },10);
-                $elem.stop().animate({width:'52px'}, 500)
+                $elem.stop().animate({width:'52px', left: '=50px'}, 500)
                 .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
             }
 	}

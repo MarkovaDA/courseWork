@@ -7,8 +7,7 @@
 .InlineSliding2DMenu{
     width:530px;
     height:52px;
-	float:right;
-	margin-right: 70px;
+	float:left;
     position:relative;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 16px;
@@ -19,7 +18,7 @@
 .InlineSliding2DMenu .item{
     position:relative;
     background-color:white;
-    float:right;
+    float:left;
     width:52px;
     margin:0px 5px;
     height:52px;

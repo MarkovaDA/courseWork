@@ -32,13 +32,15 @@
 <div id="logo"></div>
 <div id="wrapper1">
 <div id="menu">
-<input type="hidden" value = <?php if (isset($_COOKIE['id'])) echo $_COOKIE['id']?> />
+<input type="hidden" id= "user_id" value = <?php if (isset($_COOKIE['id'])) echo $_COOKIE['id']?> />
 <a id="user_login"><?php if (isset($_COOKIE['user'])) echo $_COOKIE['user']; ?></a>
 <nav class="row">
    <ul class="nav nav-pills">
        <li><a href="#" class="menu_item" >Главная</a></li>
        <li><a href="#" class="menu_item">О сайте</a></li>
-       <li><a href="#" class="menu_item"><span class="glyphicon glyphicon-book"></span> Моя библиотека</a></li>
+	   <?php if (isset($_COOKIE['id'])) 
+       echo '<li><a href="#" class="menu_item"><span class="glyphicon glyphicon-book"></span> Моя библиотека</a></li>'
+	   ?>
 	   <li>
 		<div class="dropdown">
 			<button class="btn btn-default dropdown-toggle" id="btnDownload"
@@ -52,6 +54,7 @@
 			</ul>
 		</div>
 		</li>
+     
    </ul>
 </nav>
 </div>
@@ -103,7 +106,11 @@
  </div>
 </div>
 <div id ="view_col">
-<p class="center-selection">Демонстрация виджета</p>
+	<p class="center-selection">Демонстрация виджета</p>
+	<div id="for_btn" style="width:100%;">
+	</div>
+	<div id="for_elem">
+	</div>
 </div>
 
 </div>
